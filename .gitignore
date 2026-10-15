@@ -1,6 +1,6 @@
 # Android / Gradle
 .gradle/
-build/
+**/build/
 local.properties
 .idea/
 *.iml
@@ -8,11 +8,19 @@ captures/
 .externalNativeBuild/
 .cxx/
 
-# Μυστικά και κλειδιά: ΠΟΤΕ στο repository
+# Secrets and signing keys
 app/google-services.json
 *.jks
 *.keystore
 keystore.properties
+.env
+.env.*
 
-# Δοκιμές C++
+# Generated release files
+app/release/
+
+# Marketing videos
+marketing/
+
+# Native test executable
 native-tests/schedule_test
