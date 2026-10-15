@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: transparent;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  position: relative;
+  width: 210px;
+  height: 210px;
+}
+
+.ring__svg {
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.ring__track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.10);
+  stroke-width: 10;
+}
+
+.ring__bar {
+  fill: none;
+  stroke: url(#ring-gradient);
+  stroke-width: 10;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 10px rgba(6, 102, 235, 0.65));
+  transition: stroke-dashoffset 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ring__stop-start { stop-color: #4C8DF6; }
+.ring__stop-end { stop-color: #0666EB; }
+
+.ring__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring__percent {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
+.ring__amount {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #9BA0AE;
+}

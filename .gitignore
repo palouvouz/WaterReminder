@@ -1,0 +1,18 @@
+# Android / Gradle
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Μυστικά και κλειδιά: ΠΟΤΕ στο repository
+app/google-services.json
+*.jks
+*.keystore
+keystore.properties
+
+# Δοκιμές C++
+native-tests/schedule_test

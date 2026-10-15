@@ -1,0 +1,6 @@
+Το αρχείο gradle-wrapper.jar (και τα scripts gradlew / gradlew.bat) δεν περιλαμβάνονται στο ZIP,
+γιατί είναι δυαδικά αρχεία που δεν μπορούν να δημιουργηθούν χωρίς σύνδεση στο internet.
+
+Δεν χρειάζεται να κάνεις κάτι: όταν ανοίξεις το project στο Android Studio, χρησιμοποιεί το
+gradle-wrapper.properties και κατεβάζει το Gradle 8.9. Αν θέλεις gradlew για τη γραμμή εντολών,
+τρέξε μία φορά μέσα στον φάκελο του project:   gradle wrapper

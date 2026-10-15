@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project("waternative")
+add_library(waternative SHARED native_bridge.cpp schedule.cpp)
+find_library(log-lib log)
+target_link_libraries(waternative ${log-lib})
